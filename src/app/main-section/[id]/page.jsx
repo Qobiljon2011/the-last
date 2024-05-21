@@ -95,7 +95,10 @@ const MainDetails = () => {
 
   if (!selectedCrypto) {
     return (
-      <div> {id}'s API dont work or data not found. Wait till API works.</div>
+      <div>
+        {" "}
+        {id}&#39;s API dont work or data not found. Wait till API works.
+      </div>
     );
   }
 
@@ -116,7 +119,7 @@ const MainDetails = () => {
         <div className="w-[30%] h-full border-r border-[#808080]">
           <div className="w-full h-[60%]  flex flex-col justify-between">
             <div className="w-full h-[60%]  flex flex-col items-center justify-between">
-              <imgz
+              <img
                 src={selectedCrypto.image.large}
                 width={200}
                 height={200}
@@ -144,7 +147,9 @@ const MainDetails = () => {
                 Current Price :
               </p>
               <p className="text-white text-[24px] font-normal">
-                {formatCurrency(selectedCrypto?.market_data?.current_price?.usd)}
+                {formatCurrency(
+                  selectedCrypto?.market_data?.current_price?.usd
+                )}
               </p>
             </div>
             <div className="w-full h-[30%]  flex items-center p-4 gap-2">
@@ -156,8 +161,8 @@ const MainDetails = () => {
           </div>
         </div>
         <div className="w-[70%] h-[100%]">
-          <LineChart className='w-[100%] h-full' />
-          <Btn/>
+          <LineChart className="w-[100%] h-full" />
+          <Btn />
         </div>
       </div>
     </div>
