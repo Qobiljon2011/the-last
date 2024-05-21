@@ -1,0 +1,12 @@
+{
+    "routes": [
+        {
+            "src" : "/",
+            "dest": "/"
+        },
+        {
+            "src" : "/crypto/[id]",
+            "dest": "/crypto/[id]"
+        }
+    ]
+}
