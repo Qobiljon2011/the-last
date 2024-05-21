@@ -116,7 +116,7 @@ const MainDetails = () => {
         <div className="w-[30%] h-full border-r border-[#808080]">
           <div className="w-full h-[60%]  flex flex-col justify-between">
             <div className="w-full h-[60%]  flex flex-col items-center justify-between">
-              <img
+              <imgz
                 src={selectedCrypto.image.large}
                 width={200}
                 height={200}
